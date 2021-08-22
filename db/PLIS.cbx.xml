@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PLIS">
+		<CBX_INST_ENTRY INSTANCE_NAME="|IMITATOR|block1:inst|data1:inst3|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|IMITATOR|block1:inst|marker1:inst1|lpm_mux:Mux0" CBX_FILE_NAME="mux_lpc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

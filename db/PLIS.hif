@@ -1,0 +1,491 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+7
+3344
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+data1
+# storage
+db|PLIS.(0).cnf
+db|PLIS.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+data1.vhd
+a23ecb5d8214286f6916c7ad6a612d7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block1:inst|data1:inst3
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+IMITATOR
+# storage
+db|PLIS.(1).cnf
+db|PLIS.(1).cnf
+# case_insensitive
+# source_file
+IMITATOR.bdf
+a31a1b9973c49d5b7526a8fa651a32c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+switch
+# storage
+db|PLIS.(2).cnf
+db|PLIS.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+switch.vhd
+a579392370fa5fe713a62a5def5a5a0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+switch:inst4
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+block1
+# storage
+db|PLIS.(3).cnf
+db|PLIS.(3).cnf
+# case_insensitive
+# source_file
+block1.bdf
+3f1ee74e5d889a6121b5655c8be66e3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block1:inst
+}
+# macro_sequence
+
+# end
+# entity
+multipleks
+# storage
+db|PLIS.(4).cnf
+db|PLIS.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+multipleks.vhd
+f034ddc81eb566b52d9ba7cd17e5c97
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block1:inst|multipleks:inst
+block2:inst1|multipleks:inst
+block3:inst2|multipleks:inst
+block4:inst3|multipleks:inst
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+marker1
+# storage
+db|PLIS.(5).cnf
+db|PLIS.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+marker1.vhd
+6e68c89baf3fc56c4d54e0a2a93a8d1d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block1:inst|marker1:inst1
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+counter
+# storage
+db|PLIS.(6).cnf
+db|PLIS.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+counter.vhd
+4a215dd0246af71f9d0d35037533cf5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block1:inst|counter:inst2
+block2:inst1|counter:inst2
+block3:inst2|counter:inst2
+block4:inst3|counter:inst2
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+block2
+# storage
+db|PLIS.(7).cnf
+db|PLIS.(7).cnf
+# case_insensitive
+# source_file
+block2.bdf
+71d985b9fac3648771153cfee8ea397
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block2:inst1
+}
+# macro_sequence
+
+# end
+# entity
+data2
+# storage
+db|PLIS.(8).cnf
+db|PLIS.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+data2.vhd
+fc199e9dbfabe4d26f4ba97d2e7fd72
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block2:inst1|data2:inst1
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+marker2
+# storage
+db|PLIS.(9).cnf
+db|PLIS.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+marker2.vhd
+d472cee382bd974c6929ea51d9daed6f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block2:inst1|marker2:inst4
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+block3
+# storage
+db|PLIS.(10).cnf
+db|PLIS.(10).cnf
+# case_insensitive
+# source_file
+block3.bdf
+a5954ed1d99252a95a4036eb52602bff
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block3:inst2
+}
+# macro_sequence
+
+# end
+# entity
+data3
+# storage
+db|PLIS.(11).cnf
+db|PLIS.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+data3.vhd
+dbd79423e06eda20864a2e8e99f84e0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block3:inst2|data3:inst1
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+marker3
+# storage
+db|PLIS.(12).cnf
+db|PLIS.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+marker3.vhd
+12f62d8f44e2fe63d88a3977877a6b3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block3:inst2|marker3:inst3
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+block4
+# storage
+db|PLIS.(13).cnf
+db|PLIS.(13).cnf
+# case_insensitive
+# source_file
+block4.bdf
+3ecd765155cc43844df7ae91ca441ad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block4:inst3
+}
+# macro_sequence
+
+# end
+# entity
+data4
+# storage
+db|PLIS.(14).cnf
+db|PLIS.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+data4.vhd
+ccefd462c586b4ce2bb38e4a7196624a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block4:inst3|data4:inst4
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+marker4
+# storage
+db|PLIS.(15).cnf
+db|PLIS.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+marker4.vhd
+41e1c91310143d7852e7c313dbe34e45
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+block4:inst3|marker4:inst5
+}
+# lmf
+..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

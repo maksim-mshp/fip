@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity FDRE is
+port(
+---IN-------------------------------		
+     C	   : in std_logic;
+	 CE    : in std_logic;
+	 R     : in std_logic;
+	 D     : in std_logic;
+---OUT------------------------------
+     Q     : out std_logic
+		);
+end FDRE;
+
+architecture Behavioral of FDRE is
+
+begin
+
+process(C)
+begin
+	 if (C'event and C = '1') then
+		 if (R='1') then
+			Q <= '0';
+		 elsif (CE='1' and R='0') then
+			Q <= D;
+		 end if;
+	 end if;
+end process;
+
+end Behavioral;

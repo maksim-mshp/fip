@@ -1,0 +1,295 @@
+|IMITATOR
+OUT <= switch:inst4.DOUT
+CLK_IN => block1:inst.clk_in
+CLK_IN => block2:inst1.clk_in
+CLK_IN => block3:inst2.clk_in
+CLK_IN => block4:inst3.clk_in
+CLK_IN => switch:inst4.clk
+EN_IN => block1:inst.en_in
+EN_IN => block2:inst1.en_in
+EN_IN => block3:inst2.en_in
+EN_IN => block4:inst3.en_in
+R_IN => block1:inst.R_in
+R_IN => block2:inst1.R_in
+R_IN => block3:inst2.R_in
+R_IN => block4:inst3.R_in
+
+
+|IMITATOR|switch:inst4
+D1 => DOUT~3.DATAB
+D2 => DOUT~2.DATAB
+D3 => DOUT~1.DATAB
+D4 => DOUT~0.DATAB
+clk => DR1.CLK
+clk => DR2.CLK
+clk => DR3.CLK
+clk => DR4.CLK
+clk => DOUT~reg0.CLK
+clk => tmp[8].CLK
+clk => tmp[7].CLK
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block1:inst
+MULTIPLEX_OUT <= multipleks:inst.DOUT
+clk_in => data1:inst3.clk
+clk_in => marker1:inst1.clk
+clk_in => counter:inst2.clk
+en_in => counter:inst2.en
+R_in => counter:inst2.R
+
+
+|IMITATOR|block1:inst|multipleks:inst
+D0 => DOUT~0.DATAB
+D1 => DOUT~0.DATAA
+S0 => DOUT~0.OUTPUTSELECT
+DOUT <= DOUT~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block1:inst|data1:inst3
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block1:inst|marker1:inst1
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block1:inst|counter:inst2
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+en => tmp[6].ENA
+en => tmp[5].ENA
+en => tmp[4].ENA
+en => tmp[3].ENA
+en => tmp[2].ENA
+en => tmp[1].ENA
+en => tmp[0].ENA
+R => tmp[6].ACLR
+R => tmp[5].ACLR
+R => tmp[4].ACLR
+R => tmp[3].ACLR
+R => tmp[2].ACLR
+R => tmp[1].ACLR
+R => tmp[0].ACLR
+ce_out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block2:inst1
+MULTIPLEX_OUT <= multipleks:inst.DOUT
+clk_in => data2:inst1.clk
+clk_in => marker2:inst4.clk
+clk_in => counter:inst2.clk
+en_in => counter:inst2.en
+R_in => counter:inst2.R
+
+
+|IMITATOR|block2:inst1|multipleks:inst
+D0 => DOUT~0.DATAB
+D1 => DOUT~0.DATAA
+S0 => DOUT~0.OUTPUTSELECT
+DOUT <= DOUT~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block2:inst1|data2:inst1
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block2:inst1|marker2:inst4
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block2:inst1|counter:inst2
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+en => tmp[6].ENA
+en => tmp[5].ENA
+en => tmp[4].ENA
+en => tmp[3].ENA
+en => tmp[2].ENA
+en => tmp[1].ENA
+en => tmp[0].ENA
+R => tmp[6].ACLR
+R => tmp[5].ACLR
+R => tmp[4].ACLR
+R => tmp[3].ACLR
+R => tmp[2].ACLR
+R => tmp[1].ACLR
+R => tmp[0].ACLR
+ce_out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block3:inst2
+MULTIPLEX_OUT <= multipleks:inst.DOUT
+clk_in => data3:inst1.clk
+clk_in => marker3:inst3.clk
+clk_in => counter:inst2.clk
+en_in => counter:inst2.en
+R_in => counter:inst2.R
+
+
+|IMITATOR|block3:inst2|multipleks:inst
+D0 => DOUT~0.DATAB
+D1 => DOUT~0.DATAA
+S0 => DOUT~0.OUTPUTSELECT
+DOUT <= DOUT~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block3:inst2|data3:inst1
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block3:inst2|marker3:inst3
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block3:inst2|counter:inst2
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+en => tmp[6].ENA
+en => tmp[5].ENA
+en => tmp[4].ENA
+en => tmp[3].ENA
+en => tmp[2].ENA
+en => tmp[1].ENA
+en => tmp[0].ENA
+R => tmp[6].ACLR
+R => tmp[5].ACLR
+R => tmp[4].ACLR
+R => tmp[3].ACLR
+R => tmp[2].ACLR
+R => tmp[1].ACLR
+R => tmp[0].ACLR
+ce_out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block4:inst3
+MULTIPLEX_OUT <= multipleks:inst.DOUT
+clk_in => data4:inst4.clk
+clk_in => marker4:inst5.clk
+clk_in => counter:inst2.clk
+en_in => counter:inst2.en
+R_in => counter:inst2.R
+
+
+|IMITATOR|block4:inst3|multipleks:inst
+D0 => DOUT~0.DATAB
+D1 => DOUT~0.DATAA
+S0 => DOUT~0.OUTPUTSELECT
+DOUT <= DOUT~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block4:inst3|data4:inst4
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block4:inst3|marker4:inst5
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+d_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IMITATOR|block4:inst3|counter:inst2
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+en => tmp[6].ENA
+en => tmp[5].ENA
+en => tmp[4].ENA
+en => tmp[3].ENA
+en => tmp[2].ENA
+en => tmp[1].ENA
+en => tmp[0].ENA
+R => tmp[6].ACLR
+R => tmp[5].ACLR
+R => tmp[4].ACLR
+R => tmp[3].ACLR
+R => tmp[2].ACLR
+R => tmp[1].ACLR
+R => tmp[0].ACLR
+ce_out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+d_out[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+d_out[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+d_out[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+d_out[3] <= tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+d_out[4] <= tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+d_out[5] <= tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+d_out[6] <= tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
